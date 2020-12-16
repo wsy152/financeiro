@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node src/server.js",
     "test": "jest",
-    "lint": "eslint src/** test** --fix"
-   
+    "lint": "eslint src/** test** --fix",
+    "secure-mode": "jest --watch"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +17,11 @@
     "@typescript-eslint/parser": "^4.10.0",
     "eslint": "^7.15.0",
     "eslint-plugin-react": "^7.21.5",
-    "jest": "^23.6.0"
+    "jest": "^23.6.0",
+    "supertest": "3.3.0"
+    
+  },
+  "dependencies": {
+    "express": "4.16.4"
   }
 }
